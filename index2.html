@@ -1,0 +1,28 @@
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title></title>
+</head>
+<body>
+    <header style="font-size:30px; text-align:center; font-family:forte">VIDEO CONTROLLER</header>
+<center><video id="vid" src="video/videoplayback.mp4" autoplay controls="posterimage.jpg">
+</video></center><br>
+<center><button type="button" name="button" onclick="pause()">pause</button>
+<button type="button" name="button" onclick="play()">play</button></center><br><br>
+  <header style="font-size:30px; text-align:center; font-family:forte">AUDIO CONTROLLER</header>
+<center><audio src="audio/audio1.mp3" autoplay controls="posterimage.jpg">
+</audio></center>
+<center><button type="button" name="button" onclick="pause()">pause</button>
+<button type="button" name="button" onclick="play()">play</button></center><br><br>
+</body>
+<script type="text/javascript">
+function pause(){
+  var video=document.getElementById("vid");
+  video.pause();
+}
+function play(){
+  var video=document.getElementById("vid");
+  video.play();
+}
+</script>
+</html>
